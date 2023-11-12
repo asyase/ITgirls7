@@ -1,0 +1,227 @@
+/* Стили для мобильных устройств */
+@media (max-width: 767px) {
+    .community-grid {
+    grid-template-columns: 1fr; 
+    }
+
+    .icon-grid {
+        grid-template-columns: 1fr; 
+    }
+
+
+    .icon img {
+      margin-left: 0; /* Убираем отступ для мобильных устройств */
+    }
+
+    h2 {
+      margin-top: 20px; /* Добавим отступ сверху для заголовков h2 в мобильной версии */
+    }
+}
+
+    .header-grid,
+    .header-grid1,
+    .banner,
+    .banner-grid,
+    .clients-grid{
+      grid-template-columns: 1fr; /* Один столбец для мобильных устройств */
+    }
+
+    .menu {
+      grid-column: span 3; /* Окопирование всей ширины для меню на мобильных устройствах */
+      justify-self: center; /* Выравнивание меню по центру */
+    text-align: center;
+    }
+
+    .register-button {
+      grid-column: span 3; /* Окопирование всей ширины для кнопки регистрации на мобильных устройствах */
+      margin-top: 10px; /* Отступ сверху */
+    }
+
+    .banner {
+      grid-template-columns: 1fr; /* Один столбец для мобильных устройств */
+    }
+
+    .text {
+      text-align: center; /* Выравнивание текста по центру */
+    }
+
+    .banner img {
+      margin-left: auto; /* Выравнивание изображения по центру */
+    margin-right: auto;
+    }
+
+    .clients-content {
+      text-align: center; /* Выравнивание текста по центру */
+    }
+
+    .client-logos {
+      grid-template-columns: repeat(4, 1fr); /* Меньше логотипов в ряду для мобильных устройств */
+    }
+  
+  
+    .icon img {
+      margin-left: auto; /* Выравнивание изображения по центру */
+      margin-right: auto;
+    }
+  
+  
+
+ 
+.header-grid {
+    display: grid;
+    grid-template-columns: auto 1fr auto; /* Three columns: left, middle, right */
+    align-items: center; /* Align items vertically */
+    background-color:#E0E0E0; /* Background color for the header */
+    padding: 40px 40px 80px 40px; 
+  }
+  
+
+.header-grid1 {
+    display: grid;
+    grid-template-columns: auto 1fr auto; /* Three columns: left, middle, right */
+    align-items: center; /* Align items vertically */
+    background-color: white; /* Background color for the header */
+    padding: 30px; 
+  }
+
+  
+  .menu {
+    display: grid;
+    grid-template-columns: repeat(5, auto); /* Each menu item in a column */
+    justify-self: end; /* Align menu to the right */
+  }
+  
+  .menu a {
+    margin: 0 10px; /* Add spacing between menu items */
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .register-button {
+    grid-column: 3; 
+    background-color: green;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  
+  .banner {
+    display: grid;
+    grid-template-columns: auto 2fr; /* Two columns within the banner */
+    align-items: center;
+    background-color: #fff;
+    background-color:#E0E0E0;
+    padding: 20px;
+    grid-column:2/3;
+    grid-row: 1/3;
+  }
+
+  .text {
+    color: #333; /* Text color for the banner */
+  }
+  
+  h1 {
+    font-size: 44.55px;
+    margin: 0;
+  }
+  
+  .gray {
+    color: #777; /* Gray text */
+  }
+  
+  .green {
+    color: green; /* Green text */
+    font-size: 44.55px;
+  }
+  
+  .register {
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px; 
+  }
+  
+  img {
+    max-width: 100%; 
+    margin-left: auto; /* Move the image to the right */
+  }
+
+
+  .clients-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px; /* Расстояние между блоками */
+    text-align: center; /* Центрировать текст по центру */
+    padding: 20px;
+  }
+  
+  .clients-content {
+    text-align: center; /* Центрировать текст по центру */
+  }
+  
+  
+  .client-logos {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    justify-content: center;
+  }
+
+  
+  
+  .logos img {
+    max-width: 100%; /* Ограничьте ширину логотипов, чтобы они не были слишком большими */
+    
+  }
+  
+  .community-grid {
+    display: grid;
+    grid-column: 1/3;
+    gap: 20px; /* Расстояние между блоками */
+    text-align: center; /* Центрировать текст по центру */
+    padding: 20px;
+  }
+  
+  .icon-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+
+  .icon {
+    display: grid;
+    gap: 5px;
+    justify-content: center;
+  }
+  
+  .icon img {
+   margin-left: 290px;
+  }
+  
+  .banner-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  .image img {
+    width: 100%; 
+  }
+  
+  .text {
+    text-align: left;
+  }
+  
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: green;
+    color: white;
+    text-decoration: none;
+  }
